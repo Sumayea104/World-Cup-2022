@@ -1,7 +1,9 @@
 *{
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 2px;
+    margin-left: 0x;
     padding: 0;
+    box-sizing: border-box;
+
 }
 :root{
     --bg-color: #161616;
@@ -39,6 +41,7 @@
 .btn{
     padding: 0 20px;
     height: 40px;
+    width: 100%;
     display: inline-block;
     line-height: 42px;
     background: var(--main-color);
@@ -55,11 +58,9 @@
 }
 
 .banner-image img{
-    height: 100vh;
+    height: 100%;
 }
-@media screen (max-width:700px){
 
-}
 
 /*----------mid----------*/
 .mid{
@@ -108,7 +109,7 @@
     border: 2px solid rgb(53, 52, 52);
     width: 220px;
     margin: 20px;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 20px 10px 10px;
 }
 .card{
     display: flex;
@@ -212,4 +213,55 @@
 .icons{
     display: flex;
     justify-content: center;
+}
+
+
+
+
+/*-------media queries------*/
+/*------------upcoming matches---------*/
+@media screen and (max-width: 786px) {
+    .banner{
+        width: 100%;
+        border: 0;
+        height:auto ;
+    }
+    .banner-image{
+        width: 323px;
+        height: 340px;
+        margin-left: 15%;
+    }
+    .btn{
+        width: 80%;
+        height: auto;
+    }
+    .banner-items {
+        width: 100%;
+    }
+    .banner-items h1{
+        font-size: 50px;
+    }
+    .banner-items p{
+        font-size: 25px;
+    }
+    .banner-container{
+        display: block;
+    }
+    .mid{
+        display: block;
+    }
+    .colum-card{
+        display: block;
+        margin-left: -15%;
+    }
+    .card-items{
+        width: 375px;
+        height: 247px;
+        top: 740px;
+        padding: 60px 0px 50px 70px;
+    }
+    .navbar{
+        display: block;
+        padding: 20px;
+    }
 }
