@@ -63,38 +63,37 @@
 /*----------mid----------*/
 .mid{
     display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
 }
 
-.left-container{
-    justify-content: left;
-    margin-top: 50px;
-}
 .aside{
     display: flex;
-    width: 80%;
+    width: 100%;
+    text-align: center;
     flex-direction: column;
     border: 2px solid black;
     padding: 20px;
     background-color: #161616;
     border-radius: 5px;
+    margin-top: 15px;
 }
-.aside input{
+.aside a{
     margin-top: 10px;
     font-size: 1.0em;
     padding: 5px 10px;
-}
-.aside input[type="button"]{
-    background-color: #bd172d;
-    border: 2px solid var(--bg-color);
+    border: 2px solid var(--main-color) ;
+    color: #000;
+    background-color: var(--main-color);
     border-radius: 5px;
     color: white;
+    font-weight: 900;
     padding: 16px 32px;
     text-decoration: none;
     margin: 2px 2px;
     cursor: pointer;
 }
 .right-colum-card{
-    margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 40px;
     margin-right: 0;
@@ -108,7 +107,7 @@
     border: 2px solid rgb(53, 52, 52);
     width: 220px;
     margin: 20px;
-    padding: 20px 0 10px 10px;
+    padding: 20px 10px 10px 10px;
 
 }
 .card{
@@ -127,24 +126,34 @@
     border: 2px solid rgb(53, 52, 52);
     width: 312px;
     height: 362px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 0px;
     padding: 0;
     border-radius: 12px;
 }
 .blogs-card-items img{
     width: 100%;
-    display: inline-block;
+}
+.blog-btn{
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 15px;
 }
 .blog-card-icons{
     display: flex;
+
 }
 .card-icons{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 15px;
+    color: #161616;
+    padding-left: 20px;
 }
+
 
 
 
@@ -174,6 +183,7 @@
 
 .navbar{
     display: flex;
+    justify-content: space-evenly;
 }
 .navbar li{
     position: relative;
