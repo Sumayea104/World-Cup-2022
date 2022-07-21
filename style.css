@@ -226,7 +226,7 @@
 
 /*-------media queries------*/
 /*------------upcoming matches---------*/
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 768px) {
     .banner{
         width: 100%;
         border: 0;
@@ -268,18 +268,29 @@
     }
     .blogs-colum-card{
         display: block;
+        margin-left: 0;
     }
-
-    }
-    /* .navbar{
+    .navbar{
         display: block;
         width: 347px;
         height: 300px;
         top: 3280px;
+        margin-left: -140%;
     }
     .navbar li{
-        padding: 10px;
+        padding: 20px 5px ;
     }
+    .icons{
+        margin-left: -20%;
+        padding: 20px ;
+    }
+}
+/*----tablets------*/
+@media screen and (min-width: 768px) (max-width:992px){
     
+}
 
+/*------destop-------*/
+@media screen and (min-width:993px)(max-width: 1399.98px){
+    
 }
