@@ -41,7 +41,7 @@
 .btn{
     padding: 0 20px;
     height: 40px;
-    width: 100%;
+    width: 50%;
     display: inline-block;
     line-height: 42px;
     background: var(--main-color);
@@ -71,7 +71,7 @@
 
 .side-nav{
     display: flex;
-    width: 100% fixed;
+    width: 100%;
     text-align: center;
     flex-direction: column;
     border: 2px solid black;
@@ -107,7 +107,7 @@
 }
 .card-items{
     border: 2px solid rgb(53, 52, 52);
-    width: 220px;
+    width: 235px;
     margin: 20px;
     padding: 20px 20px 10px 10px;
 }
@@ -154,7 +154,10 @@
     padding-left: 20px;
 }
 
-
+/*-----------groups--------*/
+.group-container{
+    width: 25%;
+}
 
 
 
@@ -205,14 +208,17 @@
     background: var(--main-color);
     left: 0;
     bottom: -4px;
-    transition: ease .40s;
+    transition: ease .30s;
 }
 .navbar a:hover::after{
     width: 100%;
 }
 .icons{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 50px 20px;
 }
 
 
@@ -220,7 +226,7 @@
 
 /*-------media queries------*/
 /*------------upcoming matches---------*/
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 412px) {
     .banner{
         width: 100%;
         border: 0;
@@ -260,8 +266,20 @@
         top: 740px;
         padding: 60px 0px 50px 70px;
     }
-    .navbar{
+    .blogs-colum-card{
         display: block;
-        padding: 20px;
     }
+
+    }
+    /* .navbar{
+        display: block;
+        width: 347px;
+        height: 300px;
+        top: 3280px;
+    }
+    .navbar li{
+        padding: 10px;
+    }
+    
+
 }
